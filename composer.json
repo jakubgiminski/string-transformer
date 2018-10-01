@@ -1,6 +1,6 @@
 {
-    "name": "jakubgiminski/transform-string",
-    "description": "Transforms string to camel case or to underscore.",
+    "name": "jakubgiminski/string-transformer",
+    "description": "Simple string transformations",
     "require-dev": {
         "phpunit/phpunit": "^7.3"
     },
@@ -10,5 +10,15 @@
             "email": "jakubgiminski@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "StringTransformer\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "StringTransformer\\Tests\\": "tests/"
+        }
+    }
 }
