@@ -15,4 +15,13 @@ class TransformStringTest extends TestCase
             TransformString::toUnderscore('transformedString')
         );
     }
+
+    /** @test */
+    public static function transformsUnderscoreToCamelCase(): void
+    {
+        self::assertSame(
+            'transformedString',
+            TransformString::toCamelCase('transformed_string')
+        );
+    }
 }
