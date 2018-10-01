@@ -9,10 +9,16 @@ class TransformString
         return strtolower(preg_replace('/(?<!^)[A-Z]/', '_$0', $input));
     }
 
+    public static function toPascalCase(string $input): string
+    {
+        return str_replace('_', '', ucwords($input, '_'));
+    }
+
     public static function toCamelCase(string $input): string
     {
-        $transformed = str_replace('_', '', ucwords($input, '_'));
+        $transformed = self::toPascalCase($input);
         $transformed[0] = strtolower($transformed[0]);
+
         return $transformed;
     }
 }

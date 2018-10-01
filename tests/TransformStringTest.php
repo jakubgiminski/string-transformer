@@ -17,6 +17,15 @@ class TransformStringTest extends TestCase
     }
 
     /** @test */
+    public static function transformsUnderscoreToPascalCase(): void
+    {
+        self::assertSame(
+            'TransformedString',
+            TransformString::toPascalCase('transformed_string')
+        );
+    }
+
+    /** @test */
     public static function transformsUnderscoreToCamelCase(): void
     {
         self::assertSame(
