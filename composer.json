@@ -1,0 +1,14 @@
+{
+    "name": "jakubgiminski/transform-string",
+    "description": "Transforms string to camel case or to underscore.",
+    "require-dev": {
+        "phpunit/phpunit": "^7.3"
+    },
+    "authors": [
+        {
+            "name": "Jakub Giminski",
+            "email": "jakubgiminski@gmail.com"
+        }
+    ],
+    "require": {}
+}
